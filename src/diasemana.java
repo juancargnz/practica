@@ -1,10 +1,17 @@
-
+import java.util.Scanner;
 public class diasemana {
 	public static void main(String[] args) {
 		
 		int diasemana = 1;
 		int semana=0;
 		int mes=1;
+		Scanner teclado;
+		teclado=new Scanner(System.in);
+		int totaldias=0;
+		do {
+			System.out.print("introduzca un numero ");
+			totaldias = teclado.nextInt();
+		} while (1>366);
 		while (mes<13) { 
 			if (mes==1) {
 				System.out.print("Enero"+(" "));
