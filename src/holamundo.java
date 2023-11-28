@@ -5,15 +5,16 @@ public class holamundo {
 		// TODO Auto-generated method stub
 		String cadena = "hola mundo";
 		for (int i = 0; i < cadena.length(); i++) {
-			
+
 			if (i % 2 == 0) {
-				cadena.toUpperCase();
-				System.out.println(cadena.toUpperCase().charAt(i));
-			}else {
-				cadena=cadena.toLowerCase();
-				System.out.println(cadena.charAt(i));
-			}
+				imprime(cadena.toUpperCase(),i);
+			} else {
+				imprime(cadena , i);
 			}
 		}
 	}
 
+	public static void imprime(String cadena, int indice) {
+		System.out.println(cadena.charAt(indice));
+	}
+}
