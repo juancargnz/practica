@@ -1,3 +1,4 @@
+package practicas;
 
 public class valor {
 	public static void main(String[] args) {
