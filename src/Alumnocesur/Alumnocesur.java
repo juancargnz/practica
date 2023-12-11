@@ -1,8 +1,19 @@
 package Alumnocesur;
+import practicas.Creator;
 
 public class Alumnocesur {
 
 	public static void main(String[] args) {
+		Clase PremiumPlus = new Clase("Premium Plus");
+		System.out.println(PremiumPlus);
+		PremiumPlus.setProfesor(new Profesor("Daniel", 47, "DAM"));
+		System.out.println(PremiumPlus);
+		
+		for (int i = 0; i < 15; i++) {
+			PremiumPlus.add(new Alumno(Creator.newName(), Creator.newAge(), "DAM"));
+			System.out.println(PremiumPlus.getAlumnos()[i]);
+		}
+		
 		Alumno fran;
 		Alumno santi;
 		Alumno juanca;

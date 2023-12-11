@@ -1,26 +1,14 @@
 package Alumnocesur;
 
-class Alumno {
-
-	private String nombre;
-	private int edad;
+class Alumno extends Persona {
+	
 	private String curso;
 
-	public String getNombre() {
-		return nombre;
+	public Alumno(String nombre, int edad,String curso) {
+		super(nombre, edad);
+		this.curso = curso;
 	}
 
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
-	}
-
-	public int getEdad() {
-		return edad;
-	}
-
-	public void setEdad(int edad) {
-		this.edad = edad;
-	}
 
 	public String getCurso() {
 		return curso;
@@ -29,16 +17,9 @@ class Alumno {
 	public void setCurso(String curso) {
 		this.curso = curso;
 	}
-
-	public Alumno(String nombre, int edad, String curso) {
-		super();
-		this.nombre = nombre;
-		this.edad = edad;
-		this.curso = curso;
-	}
-
+	
 	public String toString() {
-		return "[Alumno:" + nombre + " edad" + edad + " curso" + curso + "]";
+		return "[Alumno:" + super.getNombre() + " edad" + super.getEdad() + " curso" + curso + "]";
 	}
 
 }
