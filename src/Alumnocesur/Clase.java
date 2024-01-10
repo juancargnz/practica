@@ -62,7 +62,9 @@ class Clase {
 	}
 
 	public void delete(String nombreAlumno) {
-		for (int i = 0; i< numAlumnos;i++) {
+		int indice=0;
+		while ((alumnos[indice].getNombre()!=nombreAlumno)&&(indice<numAlumnos)) {
+			indice++;
 			
 		}
 	}
