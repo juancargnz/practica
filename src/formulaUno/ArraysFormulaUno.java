@@ -60,6 +60,18 @@ class ArrayCoche {
 		}
 	}
 	
+	public void destruirCoche(Coche coche) {
+	//buscar un coche en un array vacio.
+		if(numElem>0) {
+			boolean noEncontrado=true;
+			int contador=0;
+			while(){
+		}
+		
+		
+		
+	}
+	
 } // cierra ArrayCoche
 
 class ArrayIngeniero {
