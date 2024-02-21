@@ -1,6 +1,8 @@
 package animales;
 
-public class animal {
+import java.io.Serializable;
+
+public class Animal implements Serializable {
 	//atributos
 	private String nombre;
 	private int tpvida;
@@ -21,7 +23,7 @@ public class animal {
 		this.tpvida = tpvida;
 	}
 
-	public animal(String nombre, int tpvida) {
+	public Animal(String nombre, int tpvida) {
 		this.nombre = nombre;
 		if ((tpvida > 0) && (tpvida < 150)) {
 			this.tpvida = tpvida;

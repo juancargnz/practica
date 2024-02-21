@@ -1,6 +1,6 @@
 package animales;
 
-public class mamifero extends animal {
+public class mamifero extends Animal {
 	private boolean vellocorporal;
 
 	public mamifero(String nombre, int tpvida, boolean vellocorporal) {

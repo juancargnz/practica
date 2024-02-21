@@ -1,6 +1,6 @@
 package animales;
 
-public class insecto extends animal  {
+public class insecto extends Animal  {
 
 	boolean alas;
 	boolean antenas;
